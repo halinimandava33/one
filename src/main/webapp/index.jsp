@@ -1,70 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SRCAS</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNest - Online Shopping</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-content">
-      <h1>INTEGRATION WITH JENKINS</h1>
-      <p>Transforming spaces into your dream home</p>
-      <a href="#contact" class="btn">Get Started</a>
+    <header>
+        <div class="logo">ShopNest</div>
+        <div class="tagline">Your One-Stop Shopping Destination</div>
+    </header>
+    
+    <nav>
+        <a href="#laptops" class="active"><i class="fas fa-laptop"></i> Laptops</a>
+        <a href="#mobiles"><i class="fas fa-mobile-alt"></i> Mobiles</a>
+        <a href="#clothes"><i class="fas fa-tshirt"></i> Clothes</a>
+        <a href="#offers"><i class="fas fa-tag"></i> Offers</a>
+        <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+    
+    <div class="cart-icon" onclick="toggleCart()">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cartCount">0</span>
     </div>
-  </header>
-
-  <!-- Services Section -->
-  <section class="services" id="services">
-    <h2>Our Services</h2>
-    <div class="service-cards">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" alt="Residential Design">
-        <h3>Residential Design</h3>
-        <p>We create beautiful and functional living spaces tailored to your needs.</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" alt="Commercial Design">
-        <h3>Commercial Design</h3>
-        <p>Designing workspaces that inspire productivity and creativity.</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" alt="Consultation">
-        <h3>Consultation</h3>
-        <p>Expert advice to help you make the best design decisions.</p>
-      </div>
+    
+    <div class="overlay" id="overlay"></div>
+    
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-header">
+            <h3>Your Shopping Cart</h3>
+            <button class="close-cart" onclick="toggleCart()">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be inserted here by JavaScript -->
+        </div>
+        <div class="cart-summary" id="cartSummary">
+            <!-- Cart summary will be inserted here by JavaScript -->
+        </div>
     </div>
-  </section>
-
-  <!-- Gallery Section -->
-  <section class="gallery" id="gallery">
-    <h2>Our Work</h2>
-    <div class="gallery-images">
-      <img src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Design 1">
-      <img src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Design 2">
-      <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Design 3">
-      <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Design 4">
+    
+    <div class="container">
+        <section id="laptops">
+            <h2 class="section-title">Laptops</h2>
+            <div class="product-grid" id="laptops-grid">
+                <!-- Laptop products will be inserted here by JavaScript -->
+            </div>
+        </section>
+        
+        <section id="mobiles">
+            <h2 class="section-title">Smartphones</h2>
+            <div class="product-grid" id="mobiles-grid">
+                <!-- Mobile products will be inserted here by JavaScript -->
+            </div>
+        </section>
+        
+        <section id="clothes">
+            <h2 class="section-title">Fashion</h2>
+            <div class="product-grid" id="clothes-grid">
+                <!-- Clothing products will be inserted here by JavaScript -->
+            </div>
+        </section>
     </div>
-  </section>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>ShopNest is your one-stop destination for all your shopping needs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#laptops">Laptops</a>
+                <a href="#mobiles">Mobiles</a>
+                <a href="#clothes">Clothes</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: contact@shopnest.com</p>
+                <p>Phone: +91 9876543210</p>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 ShopNest. All rights reserved.
+        </div>
+    </footer>
 
-  <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <form id="contact-form">
-      <input type="text" id="name" placeholder="Your Name" required>
-      <input type="email" id="email" placeholder="Your Email" required>
-      <textarea id="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2023 Interior Design Studio. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
