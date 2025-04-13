@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div class="logo">ShopNest</div>
+        <div class="logo">FLIPKART</div>
         <div class="tagline">Your One-Stop Shopping Destination</div>
     </header>
     
