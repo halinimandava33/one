@@ -15,7 +15,7 @@
     </header>
     
     <nav>
-        <a href="#laptops" class="active"><i class="fas fa-laptop"></i> Laptops</a>
+        <a href="#laptops" class="active"><em class="fas fa-laptop"></em> Laptops</a>
         <a href="#mobiles"><em class="fas fa-mobile-alt"></em> Mobiles</a>
         <a href="#clothes"><em class="fas fa-tshirt"></em> Clothes</a>
         <a href="#offers"><em class="fas fa-tag"></em> Offers</a>
@@ -23,7 +23,7 @@
     </nav>
     
     <div class="cart-icon" onclick="toggleCart()">
-        <i class="fas fa-shopping-cart"></i>
+        <em class="fas fa-shopping-cart"></em>
         <span class="cart-count" id="cartCount">0</span>
     </div>
     
