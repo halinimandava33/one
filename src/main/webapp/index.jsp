@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,10 +16,10 @@
     
     <nav>
         <a href="#laptops" class="active"><i class="fas fa-laptop"></i> Laptops</a>
-        <a href="#mobiles"><i class="fas fa-mobile-alt"></i> Mobiles</a>
-        <a href="#clothes"><i class="fas fa-tshirt"></i> Clothes</a>
-        <a href="#offers"><i class="fas fa-tag"></i> Offers</a>
-        <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="#mobiles"><em class="fas fa-mobile-alt"></em> Mobiles</a>
+        <a href="#clothes"><em class="fas fa-tshirt"></em> Clothes</a>
+        <a href="#offers"><em class="fas fa-tag"></em> Offers</a>
+        <a href="#contact"><em class="fas fa-envelope"></em> Contact</a>
     </nav>
     
     <div class="cart-icon" onclick="toggleCart()">
